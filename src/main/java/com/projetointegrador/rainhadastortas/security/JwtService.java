@@ -1,4 +1,4 @@
-package com.generation.blogpessoal.security;
+package com.projetointegrador.rainhadastortas.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

@@ -8,11 +8,11 @@
 		<version>3.2.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.generation</groupId>
-	<artifactId>blogpessoal</artifactId>
+	<groupId>com.projetointegrador</groupId>
+	<artifactId>rainhadastortas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>blogpessoal</name>
-	<description>Projeto Blog Pessoal</description>
+	<name>rainhadastortas</name>
+	<description>Projeto Rainha das Tortas</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

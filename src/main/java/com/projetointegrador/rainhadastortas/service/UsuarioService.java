@@ -1,9 +1,9 @@
-package com.generation.blogpessoal.service;
+package com.projetointegrador.rainhadastortas.service;
 
-import com.generation.blogpessoal.model.Usuario;
-import com.generation.blogpessoal.model.UsuarioLogin;
-import com.generation.blogpessoal.repository.UsuarioRepository;
-import com.generation.blogpessoal.security.JwtService;
+import com.projetointegrador.rainhadastortas.model.Usuario;
+import com.projetointegrador.rainhadastortas.model.UsuarioLogin;
+import com.projetointegrador.rainhadastortas.repository.UsuarioRepository;
+import com.projetointegrador.rainhadastortas.security.JwtService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -76,8 +76,6 @@ public class UsuarioService {
 
                 // Preenche o Objeto usuarioLogin com os dados encontrados
                 usuarioLogin.get().setId(usuario.get().getId());
-                usuarioLogin.get().setNome(usuario.get().getNome());
-                usuarioLogin.get().setFoto(usuario.get().getFoto());
                 usuarioLogin.get().setToken(gerarToken(usuarioLogin.get().getUsuario()));
                 usuarioLogin.get().setSenha("");
 

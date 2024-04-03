@@ -1,7 +1,7 @@
-package com.generation.blogpessoal.security;
+package com.projetointegrador.rainhadastortas.security;
 
-import com.generation.blogpessoal.model.Usuario;
-import com.generation.blogpessoal.repository.UsuarioRepository;
+import com.projetointegrador.rainhadastortas.model.Usuario;
+import com.projetointegrador.rainhadastortas.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.userdetails.UserDetails;

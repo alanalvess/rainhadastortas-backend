@@ -1,6 +1,6 @@
-package com.generation.blogpessoal.repository;
+package com.projetointegrador.rainhadastortas.repository;
 
-import com.generation.blogpessoal.model.Usuario;
+import com.projetointegrador.rainhadastortas.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

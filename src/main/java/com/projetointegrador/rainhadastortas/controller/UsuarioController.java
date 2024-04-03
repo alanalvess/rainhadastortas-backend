@@ -1,9 +1,9 @@
-package com.generation.blogpessoal.controller;
+package com.projetointegrador.rainhadastortas.controller;
 
-import com.generation.blogpessoal.model.Usuario;
-import com.generation.blogpessoal.model.UsuarioLogin;
-import com.generation.blogpessoal.repository.UsuarioRepository;
-import com.generation.blogpessoal.service.UsuarioService;
+import com.projetointegrador.rainhadastortas.model.Usuario;
+import com.projetointegrador.rainhadastortas.model.UsuarioLogin;
+import com.projetointegrador.rainhadastortas.repository.UsuarioRepository;
+import com.projetointegrador.rainhadastortas.service.UsuarioService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

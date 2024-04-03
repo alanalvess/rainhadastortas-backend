@@ -1,6 +1,6 @@
-package com.generation.blogpessoal.security;
+package com.projetointegrador.rainhadastortas.security;
 
-import com.generation.blogpessoal.model.Usuario;
+import com.projetointegrador.rainhadastortas.model.Usuario;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
