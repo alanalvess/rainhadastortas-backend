@@ -15,7 +15,7 @@ public class Torta {
 
 	private String imagem;
 
-	private String name;
+	private String nome;
 
 	private String descricao;
 
@@ -41,12 +41,12 @@ public class Torta {
 		this.imagem = imagem;
 	}
 
-	public String getName() {
-		return name;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public String getDescricao() {
