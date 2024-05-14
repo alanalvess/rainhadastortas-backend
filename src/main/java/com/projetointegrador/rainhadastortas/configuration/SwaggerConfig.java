@@ -2,6 +2,7 @@ package com.projetointegrador.rainhadastortas.configuration;
 
 import io.swagger.v3.oas.models.ExternalDocumentation;
 import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.responses.ApiResponse;
 import io.swagger.v3.oas.models.responses.ApiResponses;
@@ -13,15 +14,19 @@ import org.springframework.context.annotation.Configuration;
 public class SwaggerConfig {
 
     @Bean
-    OpenAPI springRainhaDasTortasOpenAPI() {
+    OpenAPI springRainhaOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("Projeto Rainha das Tortas")
-                        .description("Projeto Rainha das Tortas")
-                        .version("v0.0.1"))
+                        .title("Projeto Integrador - Rainha das Tortas")
+                        .description("Projeto Integrador - Rainha das Tortas")
+                        .version("v0.0.1")
+                        .contact(new Contact()
+                                .name("Rainha das Tortas")
+                                .url("https://github.com/rainhadastortas")
+                                .email("rainhadastortas123@gmail.com")))
                 .externalDocs(new ExternalDocumentation()
                         .description("Github")
-                        .url("https://github.com/alanalvess"));
+                        .url("https://github.com/rainhadastortas"));
     }
 
 

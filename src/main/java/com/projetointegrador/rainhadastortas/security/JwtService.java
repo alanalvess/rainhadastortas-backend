@@ -17,7 +17,7 @@ import java.util.function.Function;
 @Component
 public class JwtService {
 
-    public static final String SECRET = "92a15f53ab778c8ce213ff661577b8b8b6d84802ae76131dd73bdaa4d2139068";
+    public static final String SECRET = "5367566B59703373367639792F423F4528482B4D6251655468576D5A71347437";
 
     private Key getSignKey() {
         byte[] keyBytes = Decoders.BASE64.decode(SECRET);
@@ -25,7 +25,7 @@ public class JwtService {
     }
 
     private Claims extractAllClaims(String token) {
-        return Jwts.parser()
+        return Jwts.parserBuilder()
                 .setSigningKey(getSignKey()).build()
                 .parseClaimsJws(token).getBody();
     }
@@ -65,4 +65,5 @@ public class JwtService {
         Map<String, Object> claims = new HashMap<>();
         return createToken(claims, userName);
     }
+
 }

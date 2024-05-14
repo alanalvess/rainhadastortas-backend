@@ -10,38 +10,40 @@ import java.util.List;
 @Table(name = "tb_categorias")
 public class Categoria {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	
-	@NotNull(message = "Oatributo descrição é obrigatório")
-	private String nome;
-	
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "categoria", cascade = CascadeType.REMOVE)
-	@JsonIgnoreProperties("categoria")
-	private List<Torta> torta;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-	public Long getId() {
-		return id;
-	}
+    @NotNull(message = "O Atributo Descrição é obrigatório")
+    @Column(unique = true)
+    private String nome;
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "categoria", cascade = CascadeType.REMOVE)
+    @JsonIgnoreProperties("categoria")
+    private List<Produto> produto;
 
-	public String getNome() {
-		return nome;
-	}
+    public Long getId() {
+        return this.id;
+    }
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public List<Torta> getTorta() {
-		return torta;
-	}
+    public String getNome() {
+        return this.nome;
+    }
 
-	public void setTorta(List<Torta> torta) {
-		this.torta = torta;
-	}
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public List<Produto> getProduto() {
+        return produto;
+    }
+
+    public void setProduto(List<Produto> produto) {
+        this.produto = produto;
+    }
+
 }

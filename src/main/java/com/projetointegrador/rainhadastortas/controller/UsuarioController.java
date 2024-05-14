@@ -25,7 +25,7 @@ public class UsuarioController {
     private UsuarioRepository usuarioRepository;
 
     @GetMapping("/all")
-    public ResponseEntity <List<Usuario>> getAll(){
+    public ResponseEntity<List<Usuario>> getAll() {
 
         return ResponseEntity.ok(usuarioRepository.findAll());
 
@@ -39,7 +39,7 @@ public class UsuarioController {
     }
 
     @PostMapping("/logar")
-    public ResponseEntity<UsuarioLogin> autenticarUsuario(@RequestBody Optional<UsuarioLogin> usuarioLogin){
+    public ResponseEntity<UsuarioLogin> autenticarUsuario(@RequestBody Optional<UsuarioLogin> usuarioLogin) {
 
         return usuarioService.autenticarUsuario(usuarioLogin)
                 .map(resposta -> ResponseEntity.status(HttpStatus.OK).body(resposta))
@@ -64,4 +64,5 @@ public class UsuarioController {
                 .orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
 
     }
+
 }
